@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+    <a href="#" onclick="abrir()">=</a>
+    <h1> Bem Vindos </h1>
+</header>
+<nav>
+    <a href="#"id="fechar" onclick="fechar()"> &times;</a>
+    <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="animes.html">animes</a></li>
+        <li><a href="jogos.html">jogos</a></li>
+        <li><a href="contato.html">contato</a></li>
+        <li><a href="localizacao.html">localizaçao</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<h2>onde Estamos</h2>
+
+<div id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234070.15508443108!2d-46.916012067187445!3d-23.55600749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a8d9acd0e7%3A0x3cde9e12c2eae172!2sLivraria%20-%20ANIME%20HUNTER!5e0!3m2!1spt-BR!2sbr!4v1652209166087!5m2!1spt-BR!2sbr width=" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"" frameborder="0"></iframe></div>
+
+</main>
+
+
+<footer>
+    <div id="endereco"
+    >
+
+    <P> rua do animes
+        cep 5478123
+        telefone 852069320 
+    </P></div>
+
+
+    <div id="redes">
+        <ul>
+            <li><a href="http://www.istagram.com" target="_blank"><img src="img/instagram.png" alt="nosso instagram"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank>"><img src="img/youtube.png" alt="nosso youtube"></a></li>
+            <li><a href="http://www.facebook.com"target="_blank>"><img src="img/facebook.png" alt="nosso facebook"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    function abrir(){
+        document.getElementsByTagName("nav")[0] .style.left="0px";
+    }
+    function fechar(){
+        document.getElementsByTagName("nav")[0] .style.left="-150px"
+    }
+
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

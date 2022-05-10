@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+    <a href="#" onclick="abrir()">=</a>
+    <h1> Bem Vindos </h1>
+</header>
+<nav>
+    <a href="#" id="fechar" onclick="fechar()"> x</a>
+    <nav>
+        <a href="#"id="fechar" onclick="fechar()"> &times;</a>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="animes.html">animes</a></li>
+            <li><a href="jogos.html">jogos</a></li>
+            <li><a href="contato.html">contato</a></li>
+            <li><a href="localizacao.html">localizaçao</a></li>
+        </ul>
+    </nav>
+<main>
+    <h2>contato</h2>
+    <form action="">
+        <input type="text" placeholder="Nome Completo" required>
+        <input type="E-mail" placeholder="E-mail" required>
+        <input type="tel" placeholder="Telefone">
+        <select name="" id="">
+            <option value="selecione">selecione</option>
+            <option value="sugestão">sugestão</option>
+            <option value="Elogio">Elogio</option>
+            <option value="Dúvida">Dúvida</option>
+            <option value="Crítica">Crítica</option>          
+        </select>
+        <textarea>
+
+        </textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</main>
+<footer>
+    <div id="endereco"
+    >
+
+    <P> rua do animes
+        cep 5478123
+        telefone 852069320 
+    </P></div>
+
+
+    <div id="redes">
+        <ul>
+            <li><a href="http://www.istagram.com" target="_blank"><img src="img/instagram.png" alt="nosso instagram"></a></li>
+            <li><a href="http://www.youtube.com" target="_blank>"><img src="img/youtube.png" alt="nosso youtube"></a></li>
+            <li><a href="http://www.facebook.com"target="_blank>"><img src="img/facebook.png" alt="nosso facebook"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    function abrir(){
+        document.getElementsByTagName("nav")[0] .style.left="0px";
+    }
+    function fechar(){
+        document.getElementsByTagName("nav")[0] .style.left="-150px"
+    }
+
+    
+    </script>
+
+
+
+</body>
+</html>

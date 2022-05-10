@@ -1,0 +1,291 @@
+/*
+arquivo css para formatação do site da cafeteria
+*/
+
+/*
+aplicar a formatação a todos os elmentos. usarems o asterisco(*)
+
+*/
+
+* {
+    /*  zerar as margens externas dos elementos */
+    margin: 0;
+    /* zerar as margens internas do elementos  */
+    padding: 0;
+    /* ajuste das caixas(box) dos elementos */
+    box-sizing: border-box;
+  }
+  
+  header {
+    height: 400px;
+    /* altura da caixa */
+    /* adicionaar uma imagem ao fundo  */
+    background-image: url("../img/demon.jpg\ 2.jpg");
+    /* ajustar a largura da imagem em 100% */
+    background-size: 100%;
+    /* ajustar a posiçao em x e y da imagem de fundo */
+    background-position: 0 -00px;
+    /* animação no fundo */
+    transition: ease 1s;
+  }
+  
+  header a,
+  #fechar {
+    opacity: 0;
+    transition: ease 0.5s;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: "verdana";
+    color: rgb(0, 0, 0);
+    /* aplicar uma sombra no texto */
+    text-shadow: 10px 10px 20px white;
+  }
+  
+  nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    transition: ease 0.5s;
+  }
+  
+  nav ul li {
+    /* dispor os itens da lista (li) em linha  */
+    display: inline-block;
+    /* aumentar as distancia entre os elmentos */
+    padding: 5px;
+    transition: ease 0.5s;
+  }
+  nav ul li:hover {
+    background-color: white;
+  }
+  
+  nav ul li a {
+    font-family: "vernada";
+    font-size: 30pt;
+    color: rgb(185, 9, 9);
+    /* retirar o underline do link */
+    text-decoration: none;
+    /* nenhum */
+  }
+  
+  footer {
+    height: 500px;
+    /* altura em 300px */
+    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgb(95, 95, 95);
+    color: rgb(252, 252, 252);
+    font-family: "arial";
+    padding-top: 50px;
+    /* dispor de froma flexivel e em linha */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer div {
+    width: 30%;
+    margin: 10px;
+  }
+  
+  #redes ul li {
+    display: inline-block;
+    margin-left: 45px;
+  }
+  
+  #redes ul li a img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+
+/* inicio do mapa */
+#mapa iframe {
+    width: 100%;
+    height: 500px;
+  }
+/* fim do mapa */
+/* inicio contato */
+main form {
+    width: 40%;
+    padding: 10px;
+    background-color: rgb(5, 5, 5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main form input[type="text"],
+  main form input[type="E-mail"],
+  main form input[type="tel"],
+  main form select,
+  main form textarea {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 0px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+  }
+  main form input[type="tel"] main form select {
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+  }
+  main form textarea {
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+  
+  main form input[type="submit"] {
+    padding: 10px;
+    border: 0px;
+    background-color: rgb(3, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(247, 246, 245);
+    margin-left: 43%;
+  }
+  main{
+    background-color: white;
+  }
+/* fim contato */
+/* ..............inicio do css da home..................... */
+h2 {
+    font-family: "arial";
+    font-size: 20pt;
+    margin: 50px;
+    /* borda na parte inferior(bottom) do h2 */
+    border-bottom: 1px solid black;
+    width: 300px;
+  }
+  
+  #home p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana;
+    font-size: 12pt;
+    line-height: 20pt;
+    /* espaçamento das linhas line-height */
+    text-align: justify;
+  }
+  
+  #imgHome {
+    text-align: center;
+  }
+  
+  #imgHome img {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    transition: ease 0.5s;
+    /* mudar o ponteiro do mouse para uma mao */
+    cursor: pointer;
+  }
+  
+  #imgHome img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  /* .......... fim do estilho da home........ */
+  /* ....................área dos breakpoints.............. */
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 0px) and (max-width: 575px) {
+  header {
+    background-size: cover;
+    background-position: 0px 0px;
+  }
+  nav {
+    width: 150px;
+    height: 100vh; /*altura do dispositivo*/
+    position: absolute; /*definindo uma posição "fixa" na tela*/
+    z-index: 10000; /*empilhamento. fazendo ficar acima de 9999 itens*/
+    top: 0px; /*posição inicial de topo 0 */
+    left: -150px; /*posição inicial a esquerda 0*/
+    padding-top: 150px;
+    text-align: left;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  #imgHome img {
+    transition: ease 1;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    width: 80%;
+    margin: auto;
+  }
+
+  header a {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+  #fechar {
+    opacity: 1;
+    color: white;
+    font-size: 25pt;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    transform: rotate(180deg);
+  }
+  iframe {
+    width: 90%;
+  }
+  main form {
+    width: 90%;
+  }
+  #mapa iframe {
+    width: 95%;
+  }
+
+  body {
+    background-color: white;
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: white;
+  }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+  body {
+    background-color: white;
+  }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+  body {
+    background-color: white;
+  }
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+  body {
+    background-color: white;
+  }}
