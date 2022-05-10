@@ -195,6 +195,47 @@ h2 {
   }
   
   /* .......... fim do estilho da home........ */
+
+  /*------------inicio img dos jogos----------- */
+  #imgjogos img{
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+  }
+  #imgjogos img {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    transition: ease 0.5s;
+    /* mudar o ponteiro do mouse para uma mao */
+    cursor: pointer;
+  }
+  #imgjogos img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+/*------------fim img dos jogos----------- */
+
+/* -----------inicio da img animes-------- */
+#imganimes2 img{
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+}
+#imganimes2 img {
+  width: 300px;
+  height: 300px;
+  margin: 25px;
+  transition: ease 0.5s;
+  /* mudar o ponteiro do mouse para uma mao */
+  cursor: pointer;
+}
+#imganimes2 img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* -----------fim da img animes-------- */
+
   /* ....................área dos breakpoints.............. */
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
